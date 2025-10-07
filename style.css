@@ -30,12 +30,12 @@ form {
 label {
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
 label span {
-	text-align: left;
 	margin-bottom: 10px;
+	white-space: nowrap;
 }
 
 input {
@@ -54,14 +54,14 @@ input {
 	label {
 		flex-direction: row;
 		align-items: center;
-		margin-bottom: 0;
+		margin-bottom: 30px;
 	}
 
 	label span {
 		width: 25%;
 		text-align: right;
-		margin-bottom: 0;
 		margin-right: 5px;
+		margin-bottom: 0;
 	}
 
 	input {
@@ -69,3 +69,24 @@ input {
 	}
 }
 
+@media (max-width: 400px) {
+	form,
+	img {
+		width: 100%;
+		height: auto;
+		border: none;
+	}
+
+	label {
+		flex-direction: column;
+		width: 85%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 40px;
+	}
+
+	label span {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+}
