@@ -4,37 +4,43 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Interactive image filter editor with adjustable hue, blur, contrast, and saturation controls">
 	<title>Final Assessment</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	
-	<div class="container">
+	<main class="container">
 		<div>
-			<form>
-				<label>
+			<form aria-label="Image filter controls">
+				<label for="hue">
 					<span>Hue Rotate</span>
 					<input id="hue" type="range" min="0" max="360" value="0" />
 				</label>
 				
-				<label>
+				<label for="blur">
 					<span>Blur</span>
 					<input id="blur" type="range" min="0" max="40" value="0" />
 				</label>
 
-				<label>
+				<label for="contrast">
 					<span>Contrast</span>
 					<input id="contrast" type="range" min="0" max="400" value="50" />
 				</label>
 
-				<label>
+				<label for="saturation">
 					<span>Saturation</span>
 					<input id="saturation" type="range" min="0" max="200" value="100" />
 				</label>
 			</form>
-			<img src="./dali.png" width="400" height="400"/>
+			<img 
+				src="./dali.png" 
+				alt="Portrait artwork of Salvador Dali with applied filters" 
+				width="400" 
+				height="400"
+			/>
 		</div>
-	</div>
+	</main>
 
 
 	<script>
